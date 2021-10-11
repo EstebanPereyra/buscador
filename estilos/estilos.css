@@ -1,0 +1,105 @@
+/* Estilos generales */
+html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-size: 62.5%; /**Reset para REM - 1rem = 10px**/
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+  }
+  
+  body {
+    font-family: 'Syncopate', sans-serif, Arial, Helvetica;
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+
+/* Header y asaide*/
+
+.header {
+    background-color: #912323;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+.contenedorMainAsaide {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Asaide*/
+
+h2 {
+  text-align: center;
+}
+
+.asaide {
+  flex-basis: 20%;
+  padding: 2rem;
+}
+
+.main {
+  margin-top: 2rem;
+  flex-basis: calc(80% - 3rem);
+}
+
+.asaide > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    border: 1px solid black;
+    padding: 2rem;
+}
+
+form select {
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 20rem;
+  height: 2.5rem;
+}
+
+form label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Resultados*/
+
+.lista {
+  margin-top: 2.5rem;
+}
+
+.lista-item {
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #912323;
+    height: 100px;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+
+/*Responsive*/
+
+@media (max-width: 700px) {
+  
+  .contenedorMainAsaide {
+    flex-direction: column-reverse;
+}
+ }
+

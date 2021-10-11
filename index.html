@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Filtros de autos</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Buscador de autos usados</h1>
+
+    </header>
+    <div class="contenedorMainAsaide">
+        <main class="main">
+            <h2>Resultados</h2>
+            <div id="resultado">
+
+            </div>
+
+        </main>
+        <aside class="asaide">
+            <h2>Filtros</h2>
+            <form action="">
+                <label for="marca">Marca</label>
+                <select name="marca" id="marca">
+                    <option value="">Seleccione</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedes Benz">Mercedes Benz</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Dodge">Dodge</option>
+                </select>
+
+                <label for="year">Año</label>
+                <select name="año" id="year">
+                    <option value="">Seleccione</option>
+                </select>
+
+                <label for="minimo">Precio minimo</label>
+                <select name="minimo" id="minimo">
+                    <option value="">Seleccione</option>
+                    <option value="20000">20,000</option>
+                    <option value="30000">30,000</option>
+                    <option value="40000">40,000</option>
+                    <option value="50000">50,000</option>
+                    <option value="60000">60,000</option>
+                    <option value="70000">70,000</option>
+                    <option value="80000">80,000</option>
+                    <option value="90000">90,000</option>
+                </select>
+
+                <label for="maximo">Precio máximo</label>
+                <select name="maximo" id="maximo">
+                    <option value="">Seleccione</option>
+                    <option value="20000">20,000</option>
+                    <option value="30000">30,000</option>
+                    <option value="40000">40,000</option>
+                    <option value="50000">50,000</option>
+                    <option value="60000">60,000</option>
+                    <option value="70000">70,000</option>
+                    <option value="80000">80,000</option>
+                    <option value="90000">90,000</option>
+                </select>
+
+                <label for="puerta">Puertas</label>
+                <select name="puertas" id="puerta">
+                    <option value="">Seleccione</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="transmision">Transmición</label>
+                <select name="transmicion" id="transmision">
+                    <option value="">Seleccione</option>
+                    <option value="automatico">Automática</option>
+                    <option value="manual">Manual</option>
+                </select>
+
+                <label for="color">Color</label>
+                <select name="color" id="color">
+                    <option value="">Seleccione</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Blanco">Blanco</option>
+                    <option value="Rojo">Rojo</option>
+                </select>
+            </form>
+
+        </aside>
+    </div>
+    <footer class="footer">
+        <h2>footer</h2>
+
+    </footer>
+
+    <script src="js/db.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
